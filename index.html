@@ -152,26 +152,47 @@
       <section class="col" id="col3">
         <section class="section">
           <h2>Spotlight: Binospec IFU</h2>
-          <p>From detector to science — a Binospec IFU datacube of a JADES
-          field:</p>
+          <p>
+            The Binospec IFU allows measuring spectra over a spatially 2-D area, a single rectangular science
+            field of 16.5 x 12 arcseconds. There is one small separate, spatially offset sky field. The
+            spatial elements (spaxels) are defined by hexagonally packed lenslets, 0.6 arcsec across on the sky,
+            with almost 100% filling factor (without gaps, 0.6 arcsec side-to-side, 0.8 arcsec corner-corner).
+            The IFU field of view is a rectangle longways east-west, so for a sky position angle of 0, the field
+            spans 16.5″ E-W and 12″ N-S (“landscape” orientation on the sky).
+
+            There are 720 fibers in total, 640 on the science and 80 on the sky fields. The spatial elements are
+            remapped into pseudo-long-slits and dispersed by the usual Binospec optics, with spectral resolution
+            and coverage roughly similar to using an 0.7″ wide longslit. The data images contain roughly 720 individual
+            spectra, 360 in each side of Binospec, lined up in pseudo-slits, as if each side of Binospec had a longslit
+            with hundreds of elements in the slit.
+
+            Binospec IFU is the first fiber-fed spectrograph supported by PypeIt. It required some significant changes
+            that will hopefully pave the way for supporting other fiber-fed spectrographs and IFUs in the future. The PypeIt
+            support includes tools for building datacubes and interactively extracting and co-adding fiber spectra.
+
+          </p>
           <div class="spotlight">
             <figure>
               <span class="step">1</span>
               <img src="assets/figures/fiber_2d.png" alt="2D fiber spectra">
-              <figcaption>Source detected in the raw 2D fiber spectra that build
-              the cube.</figcaption>
+              <figcaption>
+                Extended emission line source visible in the raw 2D fiber spectra, a co-add of 7 science exposures.
+                <i>Data courtesy C. Willmer (U. Arizona)</i>
+              </figcaption>
             </figure>
             <figure>
               <span class="step">2</span>
               <img src="assets/figures/ifu_6784.png" alt="6784 Å narrowband slice">
               <figcaption>Reconstructed datacube narrowband slice at 6784 Å
-              (5-channel co-add).</figcaption>
+              (5-channel co-add) highlighting the source visible in the raw 2D data.</figcaption>
             </figure>
             <figure>
               <span class="step">3</span>
               <img src="assets/figures/extraction_gui.png" alt="Interactive extraction GUI">
-              <figcaption>Interactive spectrum-extraction GUI.
-              <i>Data courtesy C. Willmer.</i></figcaption>
+              <figcaption>
+                Interactive spectrum-extraction GUI featuring an engineering observation of NGC 2392 (the “Eskimo Nebula”).
+                The GUI allows users to select fibers for extraction either individually or in groups that are co-added.
+              </figcaption>
             </figure>
           </div>
         </section>

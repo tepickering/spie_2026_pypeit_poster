@@ -82,7 +82,7 @@ li{margin-bottom:3mm;}
 
 .spotlight{display:flex;flex-direction:column;gap:9mm;margin-top:5mm;}
 .spotlight figure{position:relative;}
-.spotlight figure img{max-height:150mm;width:auto;max-width:100%;
+.spotlight figure img{max-height:112mm;width:auto;max-width:100%;
   margin-inline:auto;}
 .spotlight .step{position:absolute;top:-4mm;left:-4mm;z-index:2;
   width:13mm;height:13mm;border-radius:50%;
