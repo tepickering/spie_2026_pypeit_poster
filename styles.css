@@ -46,5 +46,19 @@ li{margin-bottom:3mm;}
 
 #footer{font-size:19pt;color:var(--muted);}
 
+/* header */
+.head-top{display:flex;align-items:center;justify-content:space-between;
+  gap:24mm;margin-bottom:7mm;}
+.brand{height:56mm;width:auto;}
+.logos{display:flex;align-items:center;gap:16mm;}
+.logos img{max-height:30mm;max-width:82mm;width:auto;height:auto;
+  object-fit:contain;}
+.titleblock h1{font-size:72pt;font-weight:700;letter-spacing:-0.5px;
+  max-width:96%;}
+.tagline{font-size:36pt;color:var(--muted);font-weight:500;margin-top:5mm;}
+.authors{font-size:23pt;margin-top:7mm;line-height:1.35;}
+.authors sup{font-size:0.62em;}
+.authors .affil{display:block;font-size:18pt;color:var(--muted);margin-top:3mm;}
+
 /* dev-only placeholder styling (removed as sections are built) */
 .placeholder{outline:2px dashed #bbb;color:#bbb;padding:6mm;font-size:30pt;}
