@@ -60,5 +60,16 @@ li{margin-bottom:3mm;}
 .authors sup{font-size:0.62em;}
 .authors .affil{display:block;font-size:18pt;color:var(--muted);margin-top:3mm;}
 
+/* column 2: roadmap cards + why list */
+.lead{margin-bottom:6mm;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:8mm;}
+.card{background:var(--bg-alt);border:1px solid var(--hairline);
+  border-radius:7px;padding:7mm 8mm;border-top:7px solid var(--spec-green);}
+.card:last-child{border-top-color:var(--spec-orange);}
+.card h3{font-size:29pt;font-weight:700;margin-bottom:4mm;}
+.card ul{padding-left:1em;}
+.card li{font-size:23pt;margin-bottom:3mm;line-height:1.28;}
+.why li{margin-bottom:4mm;}
+
 /* dev-only placeholder styling (removed as sections are built) */
 .placeholder{outline:2px dashed #bbb;color:#bbb;padding:6mm;font-size:30pt;}
