@@ -71,5 +71,29 @@ li{margin-bottom:3mm;}
 .card li{font-size:23pt;margin-bottom:3mm;line-height:1.28;}
 .why li{margin-bottom:4mm;}
 
+/* column 3: MMTO data-quality pair, IFU spotlight, get-started */
+.dq{display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin-top:6mm;}
+.dq figure img{background:#000;}
+
+.spotlight{display:flex;flex-direction:column;gap:9mm;margin-top:5mm;}
+.spotlight figure{position:relative;}
+.spotlight .step{position:absolute;top:-4mm;left:-4mm;z-index:2;
+  width:13mm;height:13mm;border-radius:50%;
+  background:var(--spec-blue);color:#fff;
+  font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:24pt;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 0 0 3px #fff;}
+.spotlight figure:nth-child(2) .step{background:var(--spec-orange);}
+.spotlight figure:nth-child(3) .step{background:var(--spec-red);}
+
+.getstarted code{font-family:ui-monospace,Menlo,monospace;font-size:30pt;
+  background:var(--bg-alt);border:1px solid var(--hairline);
+  padding:3mm 6mm;border-radius:6px;display:inline-block;}
+.qr-row{display:flex;gap:18mm;margin-top:6mm;}
+.qr-row figure{display:flex;flex-direction:column;align-items:center;
+  text-align:center;}
+.qr-row img{width:48mm;height:48mm;}
+.qr-row figcaption{margin-top:2mm;color:var(--ink);}
+
 /* dev-only placeholder styling (removed as sections are built) */
 .placeholder{outline:2px dashed #bbb;color:#bbb;padding:6mm;font-size:30pt;}
