@@ -15,6 +15,7 @@ body{background:var(--bg);color:var(--ink);
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
 
 #poster{width:841mm;height:1189mm;display:grid;
+  grid-template-columns:minmax(0,1fr);
   grid-template-rows:auto auto 1fr auto;
   padding:24mm 22mm;gap:12mm;}
 
@@ -55,7 +56,7 @@ li{margin-bottom:3mm;}
 .head-top{display:flex;align-items:center;justify-content:space-between;
   gap:24mm;margin-bottom:7mm;}
 .brand{height:56mm;width:auto;}
-.logos{display:flex;align-items:center;gap:16mm;}
+.logos{display:flex;align-items:center;gap:16mm;flex:none;}
 .logos img{max-height:30mm;max-width:82mm;width:auto;height:auto;
   object-fit:contain;}
 .titleblock h1{font-size:72pt;font-weight:700;letter-spacing:-0.5px;

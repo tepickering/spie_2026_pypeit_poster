@@ -113,7 +113,7 @@
         <section class="section">
           <h2>Why PypeIt?</h2>
           <ul class="why">
-            <li><b>Open source</b> — free as in beer <i>and</i> openly
+            <li><b>Open source</b> — freely available <i>and</i> openly
             developed.</li>
             <li>Built on the widely-used <b>scientific Python</b> software
             stack.</li>
@@ -153,19 +153,14 @@
         <section class="section">
           <h2>Spotlight: Binospec IFU</h2>
           <p>
-            The Binospec IFU allows measuring spectra over a spatially 2-D area, a single rectangular science
-            field of 16.5 x 12 arcseconds. There is one small separate, spatially offset sky field. The
-            spatial elements (spaxels) are defined by hexagonally packed lenslets, 0.6 arcsec across on the sky,
-            with almost 100% filling factor (without gaps, 0.6 arcsec side-to-side, 0.8 arcsec corner-corner).
-            The IFU field of view is a rectangle longways east-west, so for a sky position angle of 0, the field
-            spans 16.5″ E-W and 12″ N-S (“landscape” orientation on the sky).
-
-            There are 720 fibers in total, 640 on the science and 80 on the sky fields. The spatial elements are
-            remapped into pseudo-long-slits and dispersed by the usual Binospec optics, with spectral resolution
-            and coverage roughly similar to using an 0.7″ wide longslit. The data images contain roughly 720 individual
-            spectra, 360 in each side of Binospec, lined up in pseudo-slits, as if each side of Binospec had a longslit
-            with hundreds of elements in the slit.
-
+            The Binospec IFU samples a rectangular science
+            field of 16.5" x 12" with 640 fibers fed by hexagonally-packed lenslets.
+            There is one small separate, spatially offset sky field that feeds an additional 80 sky fibers. The
+            spatial elements (spaxels) are 0.6" across on the sky, 0.8" corner-to-corner,
+            with almost 100% filling factor. The spectral resolution
+            and coverage is roughly similar to using an 0.7″ wide longslit.
+          </p>
+          <p>
             Binospec IFU is the first fiber-fed spectrograph supported by PypeIt. It required some significant changes
             that will hopefully pave the way for supporting other fiber-fed spectrographs and IFUs in the future. The PypeIt
             support includes tools for building datacubes and interactively extracting and co-adding fiber spectra.
