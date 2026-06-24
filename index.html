@@ -11,10 +11,17 @@
       <div class="head-top">
         <img class="brand" src="assets/logos/pypeit_wordmark.png" alt="PypeIt logo">
         <div class="logos">
-          <img src="assets/logos/ua.png"   alt="University of Arizona">
-          <img src="assets/logos/mmt.png"  alt="MMT Observatory">
-          <img src="assets/logos/uco.svg"  alt="UC Observatories">
-          <img src="assets/logos/nsf.svg"  alt="National Science Foundation">
+          <div class="logo-row">
+            <img src="assets/logos/ua.png"   alt="University of Arizona">
+            <img src="assets/logos/mmt.png"  alt="MMT Observatory">
+            <img src="assets/logos/uco.svg"  alt="UC Observatories">
+            <img src="assets/logos/keck.png" alt="W. M. Keck Observatory">
+          </div>
+          <div class="logo-row">
+            <img src="assets/logos/nsf.svg"  alt="National Science Foundation">
+            <img src="assets/logos/nasa.svg" alt="NASA">
+            <img src="assets/logos/jwst.svg" alt="James Webb Space Telescope">
+          </div>
         </div>
       </div>
       <div class="titleblock">
@@ -26,7 +33,7 @@
           J.&nbsp;X.&nbsp;Prochaska<sup>1</sup>, J.&nbsp;F.&nbsp;Hennawi<sup>2</sup>,
           K.&nbsp;B.&nbsp;Westfall<sup>3</sup>, D.&nbsp;Pelliccia<sup>3</sup>,
           D.&nbsp;Reichwein<sup>3</sup>, B.&nbsp;Holden<sup>3</sup>,
-          M.&nbsp;Brodheim<sup>4</sup>, <b>T.&nbsp;Pickering<sup>5</sup></b>,
+          M.&nbsp;Brodheim<sup>4</sup>, <b>T.&nbsp;E.&nbsp;Pickering<sup>5</sup></b>,
           T.&nbsp;Ellsworth-Bowers<sup>6</sup>, R.&nbsp;Cooke<sup>7</sup>,
           F.&nbsp;Davies<sup>8</sup>, F.&nbsp;Wang<sup>5</sup>,
           M.&nbsp;Roberson<sup>9</sup>, and many more
@@ -45,7 +52,7 @@
           <p><b>PypeIt</b> (pronounced “pipe it”) is a Python package for
           semi-automated processing and reduction of optical / near-IR
           spectroscopic data. Designed as a general-purpose pipeline, it
-          currently supports <b>~50 spectrographs on ~18 telescopes</b>. Its
+          currently supports <b> over 60 spectrographs on 18 telescopes</b>. Its
           algorithms build on decades of development from earlier pipelines to
           produce robust, science-grade data products.</p>
           <p>With <b>version 2.0</b>, PypeIt has entered a more mature stage of
@@ -59,7 +66,7 @@
           <h2>PypeIt Across the Globe</h2>
           <figure>
             <img src="assets/figures/world_map.png" alt="Map of supported spectrographs">
-            <figcaption>PypeIt’s ~50 supported spectrographs span ~18 telescopes
+            <figcaption>PypeIt’s 60+ supported spectrographs span 18 telescopes across both hemispheres
             worldwide.</figcaption>
           </figure>
         </section>
@@ -67,9 +74,11 @@
           <h2>Community &amp; Impact</h2>
           <figure>
             <img src="assets/figures/growth.png" alt="Cumulative Slack users and citations">
-            <figcaption>Cumulative PypeIt Slack users and refereed citations
-            keep growing (dotted = projected). Twice-yearly user workshops
-            support the community — next on <b>April 28, 12:00 MST</b>.</figcaption>
+            <figcaption>
+              Cumulative PypeIt Slack users and refereed citations
+              keep growing (dotted = projected). Twice-yearly user workshops
+              support the community — the last one was on <b>April 28</b>, the next is scheduled for <b>mid-October</b>.
+            </figcaption>
           </figure>
         </section>
         <section class="section">
@@ -102,6 +111,7 @@
               <h3>Upcoming — 2.1.X</h3>
               <ul>
                 <li>Low-level code refactoring</li>
+                <li>Python 3.14 support</li>
                 <li>Run sky-subtraction and extraction steps separately</li>
                 <li><b>MMT Binospec IFU support</b>; improved Binospec
                 reductions</li>
@@ -201,7 +211,7 @@
             </figure>
             <figure>
               <img src="assets/figures/qr_slack.png" alt="Slack invite QR code">
-              <figcaption><b>Join the</b><br>Users Slack</figcaption>
+              <figcaption><b>Join</b><br>the PypeIt Users Slack</figcaption>
             </figure>
           </div>
         </section>
