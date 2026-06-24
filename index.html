@@ -31,17 +31,16 @@
            astronomical spectroscopy</p>
         <p class="authors">
           J.&nbsp;X.&nbsp;Prochaska<sup>1</sup>, J.&nbsp;F.&nbsp;Hennawi<sup>2</sup>,
-          K.&nbsp;B.&nbsp;Westfall<sup>3</sup>, D.&nbsp;Pelliccia<sup>3</sup>,
-          D.&nbsp;Reichwein<sup>3</sup>, B.&nbsp;Holden<sup>3</sup>,
-          M.&nbsp;Brodheim<sup>4</sup>, <b>T.&nbsp;E.&nbsp;Pickering<sup>5</sup></b>,
-          T.&nbsp;Ellsworth-Bowers<sup>6</sup>, R.&nbsp;Cooke<sup>7</sup>,
-          F.&nbsp;Davies<sup>8</sup>, F.&nbsp;Wang<sup>10</sup>,
-          M.&nbsp;Roberson<sup>9</sup>, and many more
-          <span class="affil"><sup>1</sup>UCSC&nbsp; <sup>2</sup>UCSB&nbsp;
-          <sup>3</sup>UC&nbsp;Observatories&nbsp; <sup>4</sup>W.&nbsp;M.&nbsp;Keck&nbsp;Obs.&nbsp;
-          <sup>5</sup>Univ.&nbsp;of&nbsp;Arizona&nbsp;/&nbsp;MMT&nbsp; <sup>6</sup>Lowell&nbsp;Obs.&nbsp;
-          <sup>7</sup>Durham&nbsp; <sup>8</sup>MPIA&nbsp; <sup>9</sup>Caltech&nbsp;
-          <sup>10</sup>Univ.&nbsp;of&nbsp;Michigan</span>
+          K.&nbsp;B.&nbsp;Westfall<sup>1</sup>, D.&nbsp;Pelliccia<sup>1</sup>,
+          D.&nbsp;Reichwein<sup>1</sup>, B.&nbsp;Holden<sup>1</sup>,
+          M.&nbsp;Brodheim<sup>3</sup>, <b>T.&nbsp;E.&nbsp;Pickering<sup>4</sup></b>,
+          T.&nbsp;Ellsworth-Bowers<sup>5</sup>, R.&nbsp;Cooke<sup>6</sup>,
+          F.&nbsp;Davies<sup>7</sup>, F.&nbsp;Wang<sup>8</sup>,
+          M.&nbsp;Mandigo-Stoba<sup>9</sup>, and many more
+          <span class="affil"><sup>1</sup>University&nbsp;of&nbsp;California&nbsp;Observatories&nbsp; <sup>2</sup>UCSB&nbsp;
+          <sup>3</sup>W.&nbsp;M.&nbsp;Keck&nbsp;Obs.&nbsp; <sup>4</sup>Univ.&nbsp;of&nbsp;Arizona&nbsp;/&nbsp;MMTO&nbsp;
+          <sup>5</sup>Lowell&nbsp;Obs.&nbsp; <sup>6</sup>Durham&nbsp; <sup>7</sup>MPIA&nbsp;
+          <sup>8</sup>Univ.&nbsp;of&nbsp;Michigan&nbsp; <sup>9</sup>Caltech</span>
         </p>
       </div>
     </header>
@@ -140,12 +139,12 @@
         <section class="section">
           <h2>Upcoming Spectrograph Support</h2>
           <ul>
-            <li><b>MMTO</b> — Binospec's new fiber IFU mode.</li>
-            <li><b>ARC 3.5-meter</b> — KOSMOS (optical long-slit and slit-mask) and TripleSpec (near-IR 5-order medium-res long-slit)
-              followed by ARCES (optical echelle).</li>
+            <li><b>MMTO</b> — Binospec IFU (optical fiber-fed IFU); ARIES (AO-fed near-IR long-slit/echelle).</li>
+            <li><b>ARC 3.5-meter</b> — KOSMOS (optical long-slit and slit-mask), TripleSpec (near-IR 5-order medium-res long-slit),
+              and ARCES (optical echelle).</li>
             <li><b>LDT</b> — RIMAS (near-IR, long-slit and echelle).</li>
             <li><b>VLT</b> — ERIS NIX arm (near-IR, long-slit), UVES (optical echelle).</li>
-            <li><b>SOAR</b> — TripleSpec 4.1 (near-IR 5-order medium-res long-slit).</li>
+            <li><b>SOAR</b> — TripleSpec (twin of ARC's TripleSpec).</li>
             <li><b>Palomar 200-inch</b> — NGPS (four-channel optical long-slit).</li>
           </ul>
         </section>
@@ -154,18 +153,17 @@
         <section class="section">
           <h2>Spotlight: Binospec IFU</h2>
           <p>
-            The Binospec IFU samples a rectangular science
-            field of 16.5" x 12" with 640 fibers fed by hexagonally-packed lenslets.
+            The Binospec IFU uses a special slit-mask to sample a 16.5" x 12" science
+            field with 640 fibers fed by hexagonally-packed lenslets.
             There is one small separate, spatially offset sky field that feeds an additional 80 sky fibers. The
             spatial elements (spaxels) are 0.6" across on the sky, 0.8" corner-to-corner,
             with almost 100% filling factor. The spectral resolution
-            and coverage is roughly similar to using an 0.7″ wide longslit.
+            and coverage is roughly similar to using a 0.7″ wide longslit.
           </p>
           <p>
             Binospec IFU is the first fiber-fed spectrograph supported by PypeIt. It required some significant changes
             that will hopefully pave the way for supporting other fiber-fed spectrographs and IFUs in the future. The PypeIt
             support includes tools for building datacubes and interactively extracting and co-adding fiber spectra.
-
           </p>
           <div class="spotlight">
             <figure>
