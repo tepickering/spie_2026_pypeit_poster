@@ -27,7 +27,7 @@ body{background:var(--bg);color:var(--ink);
 /* columns */
 #columns{display:grid;grid-template-columns:repeat(3,1fr);gap:16mm;
   align-items:start;}
-.col{display:flex;flex-direction:column;gap:11mm;}
+.col{display:flex;flex-direction:column;gap:30mm;}
 
 /* typography */
 h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.08;}

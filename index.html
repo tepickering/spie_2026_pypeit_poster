@@ -13,11 +13,11 @@
         <div class="logos">
           <div class="logo-row">
             <img src="assets/logos/ua.png"   alt="University of Arizona">
-            <img src="assets/logos/mmt.png"  alt="MMT Observatory">
-            <img src="assets/logos/uco.svg"  alt="UC Observatories">
             <img src="assets/logos/keck.png" alt="W. M. Keck Observatory">
           </div>
           <div class="logo-row">
+            <img src="assets/logos/mmt.png"  alt="MMT Observatory">
+            <img src="assets/logos/uco.svg"  alt="UC Observatories">
             <img src="assets/logos/nsf.svg"  alt="National Science Foundation">
             <img src="assets/logos/nasa.svg" alt="NASA">
             <img src="assets/logos/jwst.svg" alt="James Webb Space Telescope">
@@ -35,12 +35,13 @@
           D.&nbsp;Reichwein<sup>3</sup>, B.&nbsp;Holden<sup>3</sup>,
           M.&nbsp;Brodheim<sup>4</sup>, <b>T.&nbsp;E.&nbsp;Pickering<sup>5</sup></b>,
           T.&nbsp;Ellsworth-Bowers<sup>6</sup>, R.&nbsp;Cooke<sup>7</sup>,
-          F.&nbsp;Davies<sup>8</sup>, F.&nbsp;Wang<sup>5</sup>,
+          F.&nbsp;Davies<sup>8</sup>, F.&nbsp;Wang<sup>10</sup>,
           M.&nbsp;Roberson<sup>9</sup>, and many more
           <span class="affil"><sup>1</sup>UCSC&nbsp; <sup>2</sup>UCSB&nbsp;
           <sup>3</sup>UC&nbsp;Observatories&nbsp; <sup>4</sup>W.&nbsp;M.&nbsp;Keck&nbsp;Obs.&nbsp;
           <sup>5</sup>Univ.&nbsp;of&nbsp;Arizona&nbsp;/&nbsp;MMT&nbsp; <sup>6</sup>Lowell&nbsp;Obs.&nbsp;
-          <sup>7</sup>Durham&nbsp; <sup>8</sup>MPIA&nbsp; <sup>9</sup>Caltech</span>
+          <sup>7</sup>Durham&nbsp; <sup>8</sup>MPIA&nbsp; <sup>9</sup>Caltech&nbsp;
+          <sup>10</sup>Univ.&nbsp;of&nbsp;Michigan</span>
         </p>
       </div>
     </header>
@@ -77,9 +78,27 @@
             <figcaption>
               Cumulative PypeIt Slack users and refereed citations
               keep growing (dotted = projected). Twice-yearly user workshops
-              support the community — the last one was on <b>April 28</b>, the next is scheduled for <b>mid-October</b>.
+              support the community — the last one was on <b>April 28</b>, the next is scheduled for <b>mid/late-October</b>.
             </figcaption>
           </figure>
+        </section>
+      </section>
+      <section class="col" id="col2">
+        <section class="section">
+          <h2>Why PypeIt?</h2>
+          <ul class="why">
+            <li><b>Open source</b> — freely available <i>and</i> openly
+            developed.</li>
+            <li>Built on the widely-used <b>scientific Python</b> software
+            stack.</li>
+            <li><b>Community-developed &amp; supported</b>: functionality updates
+            immediately benefit every supported spectrograph; twice-yearly user
+            workshops.</li>
+            <li><b>Robust noise modeling</b> and photon-limited sky
+            subtraction.</li>
+            <li>Builds on <b>decades of algorithmic development</b> from legacy
+            pipelines.</li>
+          </ul>
         </section>
         <section class="section">
           <h2>One Pipeline, Many Instruments</h2>
@@ -89,8 +108,6 @@
             modes — long-slit, echelle, slicer-IFU, and multi-object.</figcaption>
           </figure>
         </section>
-      </section>
-      <section class="col" id="col2">
         <section class="section">
           <h2>Development &amp; Roadmap</h2>
           <p class="lead"><b>Broad goals:</b> support more modes &amp;
@@ -113,50 +130,24 @@
                 <li>Low-level code refactoring</li>
                 <li>Python 3.14 support</li>
                 <li>Run sky-subtraction and extraction steps separately</li>
-                <li><b>MMT Binospec IFU support</b>; improved Binospec
-                reductions</li>
+                <li>Improved Binospec reductions</li>
+                <li>Quicklook viewer (see Paper 14155-131)</li>
                 <li>Various bug fixes</li>
               </ul>
             </div>
           </div>
         </section>
         <section class="section">
-          <h2>Why PypeIt?</h2>
-          <ul class="why">
-            <li><b>Open source</b> — freely available <i>and</i> openly
-            developed.</li>
-            <li>Built on the widely-used <b>scientific Python</b> software
-            stack.</li>
-            <li><b>Community-developed &amp; supported</b>: functionality updates
-            immediately benefit every supported spectrograph; twice-yearly user
-            workshops.</li>
-            <li><b>Robust noise modeling</b> and photon-limited sky
-            subtraction.</li>
-            <li>Builds on <b>decades of algorithmic development</b> from legacy
-            pipelines.</li>
-          </ul>
-        </section>
-        <section class="section">
-          <h2>PypeIt at the MMTO</h2>
+          <h2>Upcoming Spectrograph Support</h2>
           <ul>
-            <li><b>Blue Channel</b> — long-slit; wavelength-calibration
-            templates for the usable range of all gratings.</li>
-            <li><b>Binospec</b> — long-slit, MOS, and IFU (under construction);
-            wavecal templates for all gratings; currently raw-data only, with
-            processed-data support planned.</li>
-            <li><b>MMIRS</b> — long-slit, MOS; needs MOS test data and more
-            coverage for some grism/filter combinations.</li>
+            <li><b>MMTO</b> — Binospec's new fiber IFU mode.</li>
+            <li><b>ARC 3.5-meter</b> — KOSMOS (optical long-slit and slit-mask) and TripleSpec (near-IR 5-order medium-res long-slit)
+              followed by ARCES (optical echelle).</li>
+            <li><b>LDT</b> — RIMAS (near-IR, long-slit and echelle).</li>
+            <li><b>VLT</b> — ERIS NIX arm (near-IR, long-slit), UVES (optical echelle).</li>
+            <li><b>SOAR</b> — TripleSpec 4.1 (near-IR 5-order medium-res long-slit).</li>
+            <li><b>Palomar 200-inch</b> — NGPS (four-channel optical long-slit).</li>
           </ul>
-          <div class="dq">
-            <figure>
-              <img src="assets/figures/faint_emission.png" alt="Faint emission-line source">
-              <figcaption>Faint emission-line source recovered.</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/figures/cosmic_ray.png" alt="Cosmic-ray rejection">
-              <figcaption>Cosmic-ray rejection on a 2D frame.</figcaption>
-            </figure>
-          </div>
         </section>
       </section>
       <section class="col" id="col3">
@@ -211,7 +202,7 @@
             </figure>
             <figure>
               <img src="assets/figures/qr_slack.png" alt="Slack invite QR code">
-              <figcaption><b>Join</b><br>the PypeIt Users Slack</figcaption>
+              <figcaption><b>Join</b><br>PypeIt Users Slack</figcaption>
             </figure>
           </div>
         </section>
