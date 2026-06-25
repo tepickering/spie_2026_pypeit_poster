@@ -84,7 +84,7 @@ li{margin-bottom:3mm;}
 .dq{display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin-top:6mm;}
 .dq figure img{background:#000;}
 
-.spotlight{display:flex;flex-direction:column;gap:9mm;margin-top:5mm;}
+.spotlight{display:flex;flex-direction:column;gap:15mm;margin-top:15mm;}
 .spotlight figure{position:relative;}
 .spotlight figure img{max-height:112mm;width:auto;max-width:100%;
   margin-inline:auto;}
