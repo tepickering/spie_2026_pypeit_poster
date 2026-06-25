@@ -48,8 +48,9 @@ li{margin-bottom:3mm;}
 
 #footer{font-size:19pt;color:var(--muted);
   border-top:3px solid var(--hairline);padding-top:6mm;}
-.foot-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:16mm;
-  line-height:1.32;}
+.foot-grid{display:grid;grid-template-columns:1fr auto 1.15fr;gap:16mm;
+  align-items:center;line-height:1.32;}
+.foot-grid .spie-logo{height:26mm;width:auto;display:block;}
 #footer b{color:var(--ink);}
 
 /* header */
