@@ -1,9 +1,9 @@
 # PypeIt SPIE 2026 poster build
 #
 #   make            render the PDF, check it is A0, and build the preview
-#   make poster     render poster.pdf and verify the page box is A0
+#   make poster     render pypeit_poster.pdf and verify the page box is A0
 #   make preview    build preview.png (override size: make preview SIZE=2400)
-#   make check      assert poster.pdf has an A0 page box
+#   make check      assert pypeit_poster.pdf has an A0 page box
 #   make open       open the rendered PDF
 #   make clean      remove generated artifacts
 #
@@ -22,12 +22,12 @@ all: poster preview
 
 poster: render check
 
-render: poster.pdf
+render: pypeit_poster.pdf
 
-poster.pdf: $(SOURCES)
+pypeit_poster.pdf: $(SOURCES)
 	bash scripts/render.sh
 
-check: poster.pdf
+check: pypeit_poster.pdf
 	$(PYTHON) scripts/check_pdf.py
 
 preview: preview.png
@@ -35,8 +35,8 @@ preview: preview.png
 preview.png: $(SOURCES)
 	bash scripts/preview.sh $(SIZE)
 
-open: poster.pdf
-	open poster.pdf
+open: pypeit_poster.pdf
+	open pypeit_poster.pdf
 
 clean:
-	rm -f poster.pdf preview.png preview_full.png
+	rm -f pypeit_poster.pdf preview.png preview_full.png
